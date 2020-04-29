@@ -15,7 +15,6 @@ public class AnchorPaneNode extends AnchorPane {
         super(children);
         // Add action handler for mouse clicked
         this.setOnMouseClicked(e -> {
-            System.out.println("This pane's date is: " + date);
             NoteWindow.openNote(date);
         });
     }
