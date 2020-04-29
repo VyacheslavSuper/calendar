@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendar.NoteController">
+   <children>
+      <ListView fx:id="listView" layoutX="59.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="99.0" layoutY="43.0" text="Заметки">
+         <font>
+            <Font name="Dubai Bold" size="32.0" />
+         </font>
+      </Label>
+      <VBox layoutX="273.0" layoutY="101.0" prefHeight="191.0" prefWidth="140.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="105.0" text="Выбран день:" />
+            <Label fx:id="datalabel" text="data">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button maxWidth="139.0" minWidth="100.0" mnemonicParsing="false" onAction="#addNote" prefHeight="25.0" prefWidth="139.0" text="Добавить">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="139.0" minWidth="99.0" mnemonicParsing="false" onAction="#remNote" prefHeight="25.0" prefWidth="100.0" text="Удалить выбранное">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="139.0" minWidth="100.0" mnemonicParsing="false" onAction="#remAllNotes" prefHeight="25.0" prefWidth="139.0" text="Удалить все">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="139.0" minWidth="100.0" mnemonicParsing="false" onAction="#backOnCalendar" prefHeight="25.0" prefWidth="139.0" text="Вернуться">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
